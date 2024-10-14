@@ -5,6 +5,35 @@
     <title>hello</title>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
+        
+        @keyframes scrollAnimation {
+            from {
+                transform: scaleY(2); /* Start at 200% */
+            }
+            to {
+                transform: scaleY(1); /* End at 100% */
+            }
+        }
+
+        }
+
+        .ascii-background-zaza {
+            animation: scrollAnimation 4s infinite alternate linear;
+            transform-origin: top;
+            transform: scaleY(2);
+            /* Other existing styles */
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }        
+        
+        
         body {
             background-color: #1c1c1c;
             margin: 0;
